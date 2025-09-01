@@ -10,6 +10,18 @@ class Message extends StatefulWidget {
 class _MessageState extends State<Message> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder(child: Text("Message"));
+    return const Placeholder(
+      child: Column(
+        children:[ 
+          InkWell(
+            splashColor: Colors.deepOrange,
+            child: Text("Message"),
+          ),
+          TextFormField(
+            
+          )
+        ]
+      )
+    );
   }
 }
