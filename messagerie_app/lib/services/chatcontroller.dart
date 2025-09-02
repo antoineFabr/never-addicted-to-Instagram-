@@ -5,7 +5,7 @@ class Chatcontroller {
   ValueNotifier<List<Message>> messagesNotifier = ValueNotifier([]);
 
   void sendMessage(String text, {bool isMe = true}) {
-    final newMessage = Message(message: text, idClient: 1);
+    final newMessage = Message(message: text, idMe: 1, idReceveur: 2);
     messagesNotifier.value = [...messagesNotifier.value, newMessage];
   }
 }
